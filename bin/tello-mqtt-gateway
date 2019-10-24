@@ -1,0 +1,13 @@
+#!/usr/bin/env python
+
+import sys
+import json
+from tello_mqtt_gateway.server import Server
+
+
+def main(argv):
+    server = Server()
+    server.start()
+
+if __name__ == "__main__":
+    main(sys.argv[1:])
